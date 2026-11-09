@@ -1,0 +1,3 @@
+embedding,domain_probe_balanced_acc
+ArcFace-kNN (baseline),1.0
+DA-ArcNet (proposed),1.0

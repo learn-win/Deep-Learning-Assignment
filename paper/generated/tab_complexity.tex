@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\caption{Model size and inference time per 10-s clip.}
+\label{tab:cx}
+\small
+\adjustbox{max width=\columnwidth}{%
+\begin{tabular}{lccc}
+\toprule
+Model & Parameters & ms / clip & Official \\
+\midrule
+AE & 186\,720 & 5.3 & 0.571 \\
+MNv2 & 710\,067 & 4.8 & 0.547 \\
+ArcFace-kNN & 54\,176 & 6.6 & 0.628 \\
++AdaCMN & 54\,240 & 7.1 & -- \\
++DANN & 54\,176 & 7.1 & -- \\
+DA-ArcNet & 54\,240 & 6.9 & 0.632 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

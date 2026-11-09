@@ -1,0 +1,15 @@
+asd_work/
+*.wav
+*.zip
+*.npy
+*.keras
+*.weights.h5
+*_savedmodel/
+__pycache__/
+.ipynb_checkpoints/
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+paper/main.pdf

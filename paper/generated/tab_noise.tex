@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Official score under additive noise (white and pink averaged), mean over machines.}
+\label{tab:noise}
+\small
+\adjustbox{max width=\columnwidth}{%
+\begin{tabular}{lccccc}
+\toprule
+Model & 0 dB & 5 dB & 10 dB & 20 dB & clean \\
+\midrule
+AE & 0.512 & 0.533 & 0.549 & 0.572 & 0.576 \\
+MNv2 & 0.535 & 0.537 & 0.542 & 0.551 & 0.555 \\
+ArcFace-kNN & 0.518 & 0.564 & 0.590 & 0.618 & 0.633 \\
+DA-ArcNet & \textbf{0.537} & \textbf{0.585} & \textbf{0.603} & \textbf{0.634} & \textbf{0.638} \\
+DA-ArcNet+AE & 0.519 & 0.571 & 0.595 & 0.616 & 0.621 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

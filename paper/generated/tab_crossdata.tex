@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Cross-dataset transfer, official score averaged over the test machines.}
+\label{tab:xd}
+\small
+\adjustbox{max width=\columnwidth}{%
+\begin{tabular}{lccc}
+\toprule
+Model & MIMII to Toy & Toy to MIMII & In-dataset \\
+\midrule
+ArcFace-kNN & 0.631 & 0.521 & \textbf{0.633} \\
+Proposed DA-ArcNet & 0.590 & 0.542 & \textbf{0.638} \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

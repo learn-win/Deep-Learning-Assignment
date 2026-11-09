@@ -1,0 +1,12 @@
+# Tested design target: Google Colab (Python 3.10+, TensorFlow >= 2.16 with Keras 3, T4 GPU)
+tensorflow>=2.16
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+seaborn
+tqdm
+pillow
+python-pptx      # slide builder (notebook Section 24)
+gradio           # optional: live demo (notebook Section 25)

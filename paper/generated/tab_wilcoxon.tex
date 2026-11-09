@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{One-sided Wilcoxon signed-rank test over machine-sections (official score): p-value that the row model beats the column baseline.}
+\label{tab:wil}
+\small
+\adjustbox{max width=\columnwidth}{%
+\begin{tabular}{lccc}
+\toprule
+Candidate & AE & ArcFace-kNN & MNv2 \\
+\midrule
+DA-ArcNet & \textbf{0.002} & 0.354 & 0.005 \\
+DA-ArcNet+AE & \textbf{0.000} & 0.840 & 0.004 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

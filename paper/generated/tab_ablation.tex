@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Ablation on fan, ToyCar (mean over these machines).}
+\label{tab:abl}
+\small
+\adjustbox{max width=\columnwidth}{%
+\begin{tabular}{lcccc}
+\toprule
+Variant & AUC src & AUC tgt & pAUC & Official \\
+\midrule
+ArcFace-kNN (baseline) & \textbf{0.798} & 0.695 & 0.549 & 0.653 \\
++ AdaCMN & 0.762 & 0.682 & 0.568 & 0.646 \\
++ DANN & 0.769 & \textbf{0.704} & \textbf{0.584} & \textbf{0.660} \\
+DA-ArcNet (AdaCMN + DANN) & 0.755 & 0.685 & 0.569 & 0.647 \\
+DA-ArcNet + AE fusion & 0.762 & 0.661 & 0.564 & 0.643 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

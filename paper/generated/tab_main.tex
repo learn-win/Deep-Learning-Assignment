@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\caption{Official score (harmonic mean of source AUC, target AUC and pAUC) per machine. Best per row in bold.}
+\label{tab:main}
+\small
+\adjustbox{max width=\columnwidth}{%
+\begin{tabular}{lccccc}
+\toprule
+Machine & AE & MNv2 & ArcFace-kNN & DA-ArcNet & DA-ArcNet+AE \\
+\midrule
+fan & 0.607 & 0.500 & \textbf{0.614} & 0.597 & 0.611 \\
+gearbox & 0.616 & 0.624 & \textbf{0.648} & 0.613 & 0.633 \\
+bearing & 0.539 & \textbf{0.663} & 0.543 & 0.582 & 0.551 \\
+slider & 0.603 & 0.500 & 0.711 & \textbf{0.758} & 0.715 \\
+valve & 0.503 & 0.500 & 0.626 & \textbf{0.632} & 0.597 \\
+ToyCar & 0.637 & 0.595 & 0.697 & \textbf{0.706} & 0.678 \\
+ToyTrain & 0.525 & 0.500 & \textbf{0.589} & 0.577 & 0.562 \\
+Mean & 0.576 & 0.555 & 0.633 & \textbf{0.638} & 0.621 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

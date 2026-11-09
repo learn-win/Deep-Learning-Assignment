@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Mean over all machines and sections; 95\% bootstrap confidence intervals for target AUC and official score.}
+\label{tab:domain}
+\small
+\adjustbox{max width=\columnwidth}{%
+\begin{tabular}{lcccc}
+\toprule
+Model & AUC src & AUC tgt [95\% CI] & pAUC & Official [95\% CI] \\
+\midrule
+AE & 0.644 & 0.576 [0.553, 0.601] & 0.539 & 0.571 [0.554, 0.583] \\
+MNv2 & 0.566 & 0.582 [0.567, 0.594] & 0.541 & 0.547 [0.539, 0.552] \\
+ArcFace-kNN & 0.760 & 0.658 [0.635, 0.682] & 0.567 & 0.628 [0.611, 0.642] \\
+DA-ArcNet & 0.745 & 0.665 [0.642, 0.686] & 0.571 & 0.632 [0.615, 0.645] \\
+DA-ArcNet+AE & 0.734 & 0.637 [0.614, 0.658] & 0.549 & 0.616 [0.601, 0.627] \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

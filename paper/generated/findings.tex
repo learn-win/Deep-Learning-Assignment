@@ -1,0 +1,7 @@
+Averaged over 7 machines, the proposed DA-ArcNet reaches an official score of 0.632, compared with 0.628 for the strongest baseline (ArcFace-kNN), a difference of +0.004.
+The 95\% bootstrap intervals of the two overlap ([0.615, 0.645] versus [0.611, 0.642]), so this difference should be read as indicative rather than conclusive.
+A one-sided Wilcoxon signed-rank test over machine-sections gives $p=0.354$ for DA-ArcNet against ArcFace-kNN.
+On the shifted target domain the AUC of DA-ArcNet is 0.665 (+0.007 relative to ArcFace-kNN); the source-to-target AUC drop is +0.080 for DA-ArcNet and +0.102 for ArcFace-kNN.
+Fusing the autoencoder score gives 0.616 (-0.012 relative to ArcFace-kNN).
+In the ablation on fan, ToyCar, the official score moves from 0.653 (ArcFace-kNN) to 0.646 with AdaCMN, 0.660 with the domain adversary and 0.647 with both.
+A linear domain probe separates source from target normal clips with balanced accuracy 1.00 on the ArcFace-kNN embedding and 1.00 on the DA-ArcNet embedding (0.5 = domain-invariant).

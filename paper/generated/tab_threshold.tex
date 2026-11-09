@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Threshold-based metrics, all machines and both domains pooled (gamma threshold from held-out normal source clips).}
+\label{tab:thr}
+\small
+\adjustbox{max width=\columnwidth}{%
+\begin{tabular}{lcccccc}
+\toprule
+Model & Accuracy & Precision & Recall & Specificity & F1 & MCC \\
+\midrule
+AE & 0.553 & 0.552 & 0.569 & 0.538 & 0.560 & 0.107 \\
+MNv2 & 0.535 & \textbf{0.590} & 0.227 & \textbf{0.842} & 0.328 & 0.088 \\
+ArcFace-kNN & 0.580 & 0.559 & 0.748 & 0.411 & 0.640 & 0.169 \\
+DA-ArcNet & 0.582 & 0.558 & \textbf{0.787} & 0.377 & \textbf{0.653} & 0.180 \\
+DA-ArcNet+AE & \textbf{0.594} & 0.572 & 0.746 & 0.442 & 0.648 & \textbf{0.197} \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
